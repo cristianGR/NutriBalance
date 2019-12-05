@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.87
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NutriBalance.Android", "NutriBalance\NutriBalance.Android\NutriBalance.Android.csproj", "{47C64C06-0DBA-4615-9FB5-D7D3FE58FC7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NutriBalance", "NutriBalance\NutriBalance\NutriBalance.csproj", "{70B0BCD5-2820-4D71-BAD3-38788FAFEF3F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{47C64C06-0DBA-4615-9FB5-D7D3FE58FC7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47C64C06-0DBA-4615-9FB5-D7D3FE58FC7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47C64C06-0DBA-4615-9FB5-D7D3FE58FC7E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{47C64C06-0DBA-4615-9FB5-D7D3FE58FC7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47C64C06-0DBA-4615-9FB5-D7D3FE58FC7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47C64C06-0DBA-4615-9FB5-D7D3FE58FC7E}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{70B0BCD5-2820-4D71-BAD3-38788FAFEF3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70B0BCD5-2820-4D71-BAD3-38788FAFEF3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70B0BCD5-2820-4D71-BAD3-38788FAFEF3F}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{70B0BCD5-2820-4D71-BAD3-38788FAFEF3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70B0BCD5-2820-4D71-BAD3-38788FAFEF3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70B0BCD5-2820-4D71-BAD3-38788FAFEF3F}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {744F53C2-DBCC-4033-8E14-B2583EE8D354}
+	EndGlobalSection
+EndGlobal
