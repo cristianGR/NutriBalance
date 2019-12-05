@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace NutriBalance.EdamanApi
+namespace NutriBalance.EdanamApi
 {
     class Constants
     {

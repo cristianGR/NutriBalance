@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using NutriBalance.ViewModel;
-using NutriBalance.EdamanApi;
+using NutriBalance.EdanamApi;
 
 namespace NutriBalance
 {
