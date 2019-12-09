@@ -79,13 +79,15 @@ namespace NutriBalance.ViewModel
             _items.Add(new FoodItem { Id = 44, Name = "Nuez", ImageSource = "nuez.png", Category = FoodCategory.Hidratos_de_carbono, Subcategory = FoodSubcategory.Frutos_secos, Kcal = 10, Weight = 100, Price = 10 });
             _items.Add(new FoodItem { Id = 45, Name = "Pistacho", ImageSource = "pistacho.png", Category = FoodCategory.Hidratos_de_carbono, Subcategory = FoodSubcategory.Frutos_secos, Kcal = 10, Weight = 100, Price = 10 });
 
-            _items.Add(new FoodItem { Id = 46, Name = "Aceite de Oliva", ImageSource = "aceituna.png", Category = FoodCategory.Grasas, Subcategory = FoodSubcategory.Aceites, Kcal = 10, Weight = 100, Price = 10 });
 
-            _items.Add(new FoodItem { Id = 47, Name = "Carne de Vaca", ImageSource = "bife.png", Category = FoodCategory.Proteina, Subcategory = FoodSubcategory.Carnes, Kcal = 10, Weight = 100, Price = 10 });
-            _items.Add(new FoodItem { Id = 48, Name = "Cerdo", ImageSource = "cerdo.png", Category = FoodCategory.Proteina, Subcategory = FoodSubcategory.Carnes, Kcal = 10, Weight = 100, Price = 10 });
-            _items.Add(new FoodItem { Id = 49, Name = "Huevo", ImageSource = "huevo.png", Category = FoodCategory.Proteina, Subcategory = FoodSubcategory.Carnes, Kcal = 10, Weight = 100, Price = 10 });
-            _items.Add(new FoodItem { Id = 50, Name = "Pavo", ImageSource = "pavo.png", Category = FoodCategory.Proteina, Subcategory = FoodSubcategory.Carnes, Kcal = 10, Weight = 100, Price = 10 });
-            _items.Add(new FoodItem { Id = 51, Name = "Pollo", ImageSource = "pollo.png", Category = FoodCategory.Proteina, Subcategory = FoodSubcategory.Carnes, Kcal = 10, Weight = 100, Price = 10 });
+            _items.Add(new FoodItem { Id = 46, Name = "Aceite de Oliva", ImageSource = "aceituna.png", Category = FoodCategory.Grasas, Subcategory = FoodSubcategory.Aceites, Kcal = 10, Weight = 100, Price = 10 });
+            _items.Add(new FoodItem { Id = 47, Name = "Aceite de Girasol", ImageSource = "aceite_de_girasol.png", Category = FoodCategory.Grasas, Subcategory = FoodSubcategory.Aceites, Kcal = 10, Weight = 100, Price = 10 });
+
+            _items.Add(new FoodItem { Id = 48, Name = "Carne de Vaca", ImageSource = "bife.png", Category = FoodCategory.Proteina, Subcategory = FoodSubcategory.Carnes, Kcal = 10, Weight = 100, Price = 10 });
+            _items.Add(new FoodItem { Id = 49, Name = "Cerdo", ImageSource = "cerdo.png", Category = FoodCategory.Proteina, Subcategory = FoodSubcategory.Carnes, Kcal = 10, Weight = 100, Price = 10 });
+            _items.Add(new FoodItem { Id = 50, Name = "Huevo", ImageSource = "huevo.png", Category = FoodCategory.Proteina, Subcategory = FoodSubcategory.Carnes, Kcal = 10, Weight = 100, Price = 10 });
+            _items.Add(new FoodItem { Id = 51, Name = "Pavo", ImageSource = "pavo.png", Category = FoodCategory.Proteina, Subcategory = FoodSubcategory.Carnes, Kcal = 10, Weight = 100, Price = 10 });
+            _items.Add(new FoodItem { Id = 52, Name = "Pollo", ImageSource = "pollo.png", Category = FoodCategory.Proteina, Subcategory = FoodSubcategory.Carnes, Kcal = 10, Weight = 100, Price = 10 });
 
         }
 

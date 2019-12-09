@@ -95,7 +95,9 @@
       <Name>NutriBalance</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\aceite_de_girasol.png" />
+  </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\aceituna.png" />
   </ItemGroup>
