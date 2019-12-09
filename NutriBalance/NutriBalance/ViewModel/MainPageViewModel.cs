@@ -43,7 +43,26 @@ namespace NutriBalance.ViewModel
             _items.Add(new FoodItem { Id = 20, Name = "Naranja", ImageSource = "naranja.png", Category = FoodCategory.Hidratos_de_carbono, Subcategory = FoodSubcategory.Frutas, Kcal = 10, Weight = 100, Price = 10 });
             _items.Add(new FoodItem { Id = 21, Name = "Pera", ImageSource = "pera.png", Category = FoodCategory.Hidratos_de_carbono, Subcategory = FoodSubcategory.Frutas, Kcal = 10, Weight = 100, Price = 10 });
             _items.Add(new FoodItem { Id = 22, Name = "Sandia", ImageSource = "sandia.png", Category = FoodCategory.Hidratos_de_carbono, Subcategory = FoodSubcategory.Frutas, Kcal = 10, Weight = 100, Price = 10 });
+
+            _items.Add(new FoodItem { Id = 23, Name = "Ajo", ImageSource = "ajo.png", Category = FoodCategory.Hidratos_de_carbono, Subcategory = FoodSubcategory.Frutas, Kcal = 10, Weight = 100, Price = 10 });
+            _items.Add(new FoodItem { Id = 24, Name = "Berenjena", ImageSource = "berenjena.png", Category = FoodCategory.Hidratos_de_carbono, Subcategory = FoodSubcategory.Frutas, Kcal = 10, Weight = 100, Price = 10 });
+            _items.Add(new FoodItem { Id = 25, Name = "Brocoli", ImageSource = "brocoli.png", Category = FoodCategory.Hidratos_de_carbono, Subcategory = FoodSubcategory.Frutas, Kcal = 10, Weight = 100, Price = 10 });
+            _items.Add(new FoodItem { Id = 26, Name = "Cebolla", ImageSource = "cebolla.png", Category = FoodCategory.Hidratos_de_carbono, Subcategory = FoodSubcategory.Frutas, Kcal = 10, Weight = 100, Price = 10 });
+            _items.Add(new FoodItem { Id = 27, Name = "chaucha", ImageSource = "chaucha.png", Category = FoodCategory.Hidratos_de_carbono, Subcategory = FoodSubcategory.Frutas, Kcal = 10, Weight = 100, Price = 10 });
+            _items.Add(new FoodItem { Id = 28, Name = "Choclo", ImageSource = "choclo.png", Category = FoodCategory.Hidratos_de_carbono, Subcategory = FoodSubcategory.Frutas, Kcal = 10, Weight = 100, Price = 10 });
+            _items.Add(new FoodItem { Id = 29, Name = "Espinaca", ImageSource = "espinaca.png", Category = FoodCategory.Hidratos_de_carbono, Subcategory = FoodSubcategory.Frutas, Kcal = 10, Weight = 100, Price = 10 });
+            _items.Add(new FoodItem { Id = 30, Name = "Morron rojo", ImageSource = "morron_rojo.png", Category = FoodCategory.Hidratos_de_carbono, Subcategory = FoodSubcategory.Frutas, Kcal = 10, Weight = 100, Price = 10 });
+            _items.Add(new FoodItem { Id = 31, Name = "Pimienta cayena", ImageSource = "pimienta_cayena.png", Category = FoodCategory.Hidratos_de_carbono, Subcategory = FoodSubcategory.Frutas, Kcal = 10, Weight = 100, Price = 10 }); 
+            _items.Add(new FoodItem { Id = 32, Name = "Remolacha", ImageSource = "remolacha.png", Category = FoodCategory.Hidratos_de_carbono, Subcategory = FoodSubcategory.Frutas, Kcal = 10, Weight = 100, Price = 10 });
+            _items.Add(new FoodItem { Id = 33, Name = "Repollo", ImageSource = "repollo.png", Category = FoodCategory.Hidratos_de_carbono, Subcategory = FoodSubcategory.Frutas, Kcal = 10, Weight = 100, Price = 10 }); 
+            _items.Add(new FoodItem { Id = 34, Name = "Tomate", ImageSource = "tomate.png", Category = FoodCategory.Hidratos_de_carbono, Subcategory = FoodSubcategory.Frutas, Kcal = 10, Weight = 100, Price = 10 });
+            _items.Add(new FoodItem { Id = 35, Name = "Zanahoria", ImageSource = "zanahoria.png", Category = FoodCategory.Hidratos_de_carbono, Subcategory = FoodSubcategory.Frutas, Kcal = 10, Weight = 100, Price = 10 }); 
+            _items.Add(new FoodItem { Id = 36, Name = "Zapallo", ImageSource = "zapallo.png", Category = FoodCategory.Hidratos_de_carbono, Subcategory = FoodSubcategory.Frutas, Kcal = 10, Weight = 100, Price = 10 });
             
+
+
+
+
         }
 
         public ObservableCollection<FoodItem> Items

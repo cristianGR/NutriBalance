@@ -91,7 +91,9 @@
       <Name>NutriBalance</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Resources\drawable\verduras\" />
+  </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\aceites\aceituna.png" />
   </ItemGroup>
@@ -204,55 +206,55 @@
     <AndroidResource Include="Resources\drawable\legumbres\soja.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\verduras\ajo.png" />
+    <AndroidResource Include="Resources\drawable\ajo.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\verduras\berenjena.png" />
+    <AndroidResource Include="Resources\drawable\berenjena.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\verduras\brocoli.png" />
+    <AndroidResource Include="Resources\drawable\brocoli.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\verduras\cebolla.png" />
+    <AndroidResource Include="Resources\drawable\cebolla.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\verduras\chaucha.png" />
+    <AndroidResource Include="Resources\drawable\chaucha.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\verduras\choclo.png" />
+    <AndroidResource Include="Resources\drawable\choclo.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\verduras\espinaca.png" />
+    <AndroidResource Include="Resources\drawable\espinaca.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\verduras\morron_rojo.png" />
+    <AndroidResource Include="Resources\drawable\morron_rojo.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\verduras\nabo.png" />
+    <AndroidResource Include="Resources\drawable\nabo.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\verduras\papa.png" />
+    <AndroidResource Include="Resources\drawable\papa.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\verduras\pepino.png" />
+    <AndroidResource Include="Resources\drawable\pepino.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\verduras\pimienta_cayena.png" />
+    <AndroidResource Include="Resources\drawable\pimienta_cayena.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\verduras\remolacha.png" />
+    <AndroidResource Include="Resources\drawable\remolacha.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\verduras\repollo.png" />
+    <AndroidResource Include="Resources\drawable\repollo.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\verduras\tomate.png" />
+    <AndroidResource Include="Resources\drawable\tomate.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\verduras\zanahoria.png" />
+    <AndroidResource Include="Resources\drawable\zanahoria.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\verduras\zapallo.png" />
+    <AndroidResource Include="Resources\drawable\zapallo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
