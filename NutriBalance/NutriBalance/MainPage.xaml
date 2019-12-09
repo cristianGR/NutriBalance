@@ -6,19 +6,34 @@
              mc:Ignorable="d"
              x:Class="NutriBalance.MainPage">
 
-    <StackLayout>
-        <ListView x:Name="listView" ItemsSource="{Binding Items}" HasUnevenRows="True">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell x:Name="Item" Tapped="Item_Tapped">
-                        <StackLayout Orientation="Horizontal">
-                            <Image HeightRequest="100" WidthRequest="100" Source="{Binding ImageSource}"/>
-                            <Label x:Name="lblIngredient" Text="{Binding Name}" VerticalOptions="Center" />
-                        </StackLayout>
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-    </StackLayout>
+    <ContentPage.Content>
+        
+        <StackLayout>
+            
+            <ListView x:Name="listView" ItemsSource="{Binding Items}"
+                  HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell x:Name="Item" Tapped="Item_Tapped">
+                            <StackLayout Orientation="Horizontal">
+                                <Image HeightRequest="100" WidthRequest="100" Source="{Binding ImageSource}"/>
+                                <Label x:Name="lblIngredient" Text="{Binding Name}" VerticalOptions="Center" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
 
+            <ActivityIndicator x:Name="_timeToresponse"
+                           HeightRequest="100"
+                           WidthRequest="100"
+                           HorizontalOptions="Center"
+                           Color="Green"
+                           IsVisible="False"></ActivityIndicator>
+        </StackLayout>
+        
+    </ContentPage.Content>
+    
 </ContentPage>
+
+

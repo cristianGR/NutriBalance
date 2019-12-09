@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="NutriBalance.View.NutritionalDataView">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="titulo" TargetType="Label">
+                <Setter Property="FontFamily" Value="" />
+                <Setter Property="FontSize" Value="15" />
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+                <Setter Property="VerticalTextAlignment" Value="Center" />
+            </Style>
+            <Style x:Key="columna_par" TargetType="Label">
+                <Setter Property="BackgroundColor" Value="Green"/>
+                <Setter Property="FontFamily" Value="bold" />
+                <Setter Property="FontSize" Value="15" />
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+                <Setter Property="VerticalTextAlignment" Value="Center" />
+            </Style>
+            <Style x:Key="columna_impar" TargetType="Label">
+                <Setter Property="BackgroundColor" Value="GreenYellow"/>
+                <Setter Property="FontFamily" Value="Bold" />
+                <Setter Property="FontSize" Value="15" />
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+                <Setter Property="VerticalTextAlignment" Value="Center" />
+            </Style>
+            <Style x:Key="columnna_par_filas" TargetType="Label">
+                <Setter Property="BackgroundColor" Value="Gray"/>
+                <Setter Property="FontFamily" Value="bold" />
+                <Setter Property="FontSize" Value="12" />
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+                <Setter Property="VerticalTextAlignment" Value="Center" />
+            </Style>
+            <Style x:Key="columna_impar_filas" TargetType="Label">
+                <Setter Property="BackgroundColor" Value="LightGray"/>
+                <Setter Property="FontFamily" Value="Bold" />
+                <Setter Property="FontSize" Value="12" />
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+                <Setter Property="VerticalTextAlignment" Value="Center" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout Margin="10,5,10,5">
+            <Label Text="**Datos para 100 grs. del alimento seleccionado**" Style="{StaticResource titulo}"></Label>
+            <ScrollView>
+                <Grid HorizontalOptions="Center">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"></RowDefinition>
+                        <RowDefinition Height="50"></RowDefinition>
+                        <RowDefinition Height="50"></RowDefinition>
+                        <RowDefinition Height="50"></RowDefinition>
+                        <RowDefinition Height="50"></RowDefinition>
+                        <RowDefinition Height="50"></RowDefinition>
+                        <RowDefinition Height="50"></RowDefinition>
+                        <RowDefinition Height="50"></RowDefinition>
+                        <RowDefinition Height="50"></RowDefinition>
+                        <RowDefinition Height="50"></RowDefinition>
+                        <RowDefinition Height="50"></RowDefinition>
+                        <RowDefinition Height="50"></RowDefinition>
+                        <RowDefinition Height="50"></RowDefinition>
+                        <RowDefinition Height="50"></RowDefinition>
+                        <RowDefinition Height="50"></RowDefinition>
+                        <RowDefinition Height="50"></RowDefinition>
+                        <RowDefinition Height="50"></RowDefinition>
+                        <RowDefinition Height="50"></RowDefinition>
+                        <RowDefinition Height="50"></RowDefinition>
+                        <RowDefinition Height="50"></RowDefinition>
+                        <RowDefinition Height="50"></RowDefinition>
+                        <RowDefinition Height="50"></RowDefinition>
+                    </Grid.RowDefinitions>
+ 
+                    <Label Grid.Row="0" Grid.Column="0" Text="DATOS" Style="{StaticResource columna_par}"></Label>
+                    <Label Grid.Row="0" Grid.Column="1" Text="CANTIDAD" Style="{StaticResource columna_impar}"></Label>
+                    <Label Grid.Row="0" Grid.Column="2" Text="UNIDAD" Style="{StaticResource columna_par}"></Label>
+
+                    <Label Grid.Row="1" Grid.Column="0" Text="Energia/Kcal" Style="{StaticResource columnna_par_filas}"></Label>
+                    <Label Grid.Row="1" Grid.Column="1" Text="{Binding _ENERC_KCAL.quantity}" Style="{StaticResource columna_impar_filas}"></Label>
+                    <Label Grid.Row="1" Grid.Column="2" Text="{Binding _ENERC_KCAL.unit}" Style="{StaticResource columnna_par_filas}"></Label>
+
+                    <Label Grid.Row="2" Grid.Column="0" Text="Grasas Saturadas" Style="{StaticResource columnna_par_filas}"></Label>
+                    <Label Grid.Row="2" Grid.Column="1" Text="{Binding _FASAT.quantity}" Style="{StaticResource columna_impar_filas}"></Label>
+                    <Label Grid.Row="2" Grid.Column="2" Text="{Binding _FASAT.unit}" Style="{StaticResource columnna_par_filas}"></Label>
+
+                    <Label Grid.Row="3" Grid.Column="0" Text="Grasas Monoinsaturadas" Style="{StaticResource columnna_par_filas}"></Label>
+                    <Label Grid.Row="3" Grid.Column="1" Text="{Binding _FAMS.quantity}" Style="{StaticResource columna_impar_filas}"></Label>
+                    <Label Grid.Row="3" Grid.Column="2" Text="{Binding _FAMS.unit}" Style="{StaticResource columnna_par_filas}"></Label>
+
+                    <Label Grid.Row="4" Grid.Column="0" Text="Grasas poliinsaturadas" Style="{StaticResource columnna_par_filas}"></Label>
+                    <Label Grid.Row="4" Grid.Column="1" Text="{Binding _FAPU.quantity}" Style="{StaticResource columna_impar_filas}"></Label>
+                    <Label Grid.Row="4" Grid.Column="2" Text="{Binding _FAPU.unit}" Style="{StaticResource columnna_par_filas}"></Label>
+
+                    <Label Grid.Row="5" Grid.Column="0" Text="Proteinas" Style="{StaticResource columnna_par_filas}"></Label>
+                    <Label Grid.Row="5" Grid.Column="1" Text="{Binding _PROCNT.quantity}" Style="{StaticResource columna_impar_filas}"></Label>
+                    <Label Grid.Row="5" Grid.Column="2" Text="{Binding _PROCNT.unit}" Style="{StaticResource columnna_par_filas}"></Label>
+
+                    <Label Grid.Row="6" Grid.Column="0"  Text="Carbohidratos" Style="{StaticResource columnna_par_filas}"></Label>
+                    <Label Grid.Row="6" Grid.Column="1"  Text="{Binding _CHOCDF.quantity}" Style="{StaticResource columna_impar_filas}"></Label>
+                    <Label Grid.Row="6" Grid.Column="2"  Text="{Binding _CHOCDF.unit}" Style="{StaticResource columnna_par_filas}"></Label>
+
+                    <Label Grid.Row="7" Grid.Column="0"  Text="Fibra" Style="{StaticResource columnna_par_filas}"></Label>
+                    <Label Grid.Row="7" Grid.Column="1"  Text="{Binding _FIBTG.quantity}" Style="{StaticResource columna_impar_filas}"></Label>
+                    <Label Grid.Row="7" Grid.Column="2"  Text="{Binding _FIBTG.unit}" Style="{StaticResource columnna_par_filas}"></Label>
+
+                    <Label Grid.Row="8" Grid.Column="0"  Text="Azucar" Style="{StaticResource columnna_par_filas}"></Label>
+                    <Label Grid.Row="8" Grid.Column="1"  Text="{Binding _SUGAR.quantity}" Style="{StaticResource columna_impar_filas}"></Label>
+                    <Label Grid.Row="8" Grid.Column="2"  Text="{Binding _SUGAR.unit}" Style="{StaticResource columnna_par_filas}"></Label>
+
+                    <Label Grid.Row="9" Grid.Column="0"  Text="Hierro" Style="{StaticResource columnna_par_filas}"></Label>
+                    <Label Grid.Row="9" Grid.Column="1"  Text="{Binding _FE.quantity}" Style="{StaticResource columna_impar_filas}"></Label>
+                    <Label Grid.Row="9" Grid.Column="2"  Text="{Binding _FE.unit}" Style="{StaticResource columnna_par_filas}"></Label>
+
+                    <Label Grid.Row="10" Grid.Column="0"  Text="Calcio" Style="{StaticResource columnna_par_filas}"></Label>
+                    <Label Grid.Row="10" Grid.Column="1"  Text="{Binding _CA.quantity}" Style="{StaticResource columna_impar_filas}"></Label>
+                    <Label Grid.Row="10" Grid.Column="2"  Text="{Binding _CA.unit}" Style="{StaticResource columnna_par_filas}"></Label>
+
+                    <Label Grid.Row="11" Grid.Column="0"  Text="Potasio" Style="{StaticResource columnna_par_filas}"></Label>
+                    <Label Grid.Row="11" Grid.Column="1"  Text="{Binding _K.quantity}" Style="{StaticResource columna_impar_filas}"></Label>
+                    <Label Grid.Row="11" Grid.Column="2"  Text="{Binding _K.unit}" Style="{StaticResource columnna_par_filas}"></Label>
+
+                    <Label Grid.Row="12" Grid.Column="0"  Text="Vitamina c" Style="{StaticResource columnna_par_filas}"></Label>
+                    <Label Grid.Row="12" Grid.Column="1"  Text="{Binding _VITC.quantity}" Style="{StaticResource columna_impar_filas}"></Label>
+                    <Label Grid.Row="12" Grid.Column="2"  Text="{Binding _VITC.unit}" Style="{StaticResource columnna_par_filas}"></Label>
+
+                    <Label Grid.Row="13" Grid.Column="0"  Text="Vitamina b6" Style="{StaticResource columnna_par_filas}"></Label>
+                    <Label Grid.Row="13" Grid.Column="1"  Text="{Binding _VITB6A.quantity}" Style="{StaticResource columna_impar_filas}"></Label>
+                    <Label Grid.Row="13" Grid.Column="2"  Text="{Binding _VITB6A.unit}" Style="{StaticResource columnna_par_filas}"></Label>
+
+                    <Label Grid.Row="14" Grid.Column="0"  Text="Fibra" Style="{StaticResource columnna_par_filas}"></Label>
+                    <Label Grid.Row="14" Grid.Column="1"  Text="{Binding _FIBTG.quantity}" Style="{StaticResource columna_impar_filas}"></Label>
+                    <Label Grid.Row="14" Grid.Column="2"  Text="{Binding _FIBTG.unit}" Style="{StaticResource columnna_par_filas}"></Label>
+
+                    <Label Grid.Row="15" Grid.Column="0"  Text="Magnesio" Style="{StaticResource columnna_par_filas}"></Label>
+                    <Label Grid.Row="15" Grid.Column="1"  Text="{Binding _MG.quantity}" Style="{StaticResource columna_impar_filas}"></Label>
+                    <Label Grid.Row="15" Grid.Column="2"  Text="{Binding _MG.unit}" Style="{StaticResource columnna_par_filas}"></Label>
+
+                    <Label Grid.Row="16" Grid.Column="0"  Text="Sodio" Style="{StaticResource columnna_par_filas}"></Label>
+                    <Label Grid.Row="16" Grid.Column="1"  Text="{Binding _NA.quantity}" Style="{StaticResource columna_impar_filas}"></Label>
+                    <Label Grid.Row="16" Grid.Column="2"  Text="{Binding _NA.unit}" Style="{StaticResource columnna_par_filas}"></Label>
+
+                    <Label Grid.Row="17" Grid.Column="0"  Text="Zinc" Style="{StaticResource columnna_par_filas}"></Label>
+                    <Label Grid.Row="17" Grid.Column="1"  Text="{Binding _ZN.quantity}" Style="{StaticResource columna_impar_filas}"></Label>
+                    <Label Grid.Row="17" Grid.Column="2"  Text="{Binding _ZN.unit}" Style="{StaticResource columnna_par_filas}"></Label>
+
+                    <Label Grid.Row="18" Grid.Column="0"  Text="tiamina" Style="{StaticResource columnna_par_filas}"></Label>
+                    <Label Grid.Row="18" Grid.Column="1"  Text="{Binding _THIA.quantity}" Style="{StaticResource columna_impar_filas}"></Label>
+                    <Label Grid.Row="18" Grid.Column="2"  Text="{Binding _THIA.unit}" Style="{StaticResource columnna_par_filas}"></Label>
+
+                    <Label Grid.Row="19" Grid.Column="0"  Text="vitamina a" Style="{StaticResource columnna_par_filas}"></Label>
+                    <Label Grid.Row="19" Grid.Column="1"  Text="{Binding _VITA_RAE.quantity}" Style="{StaticResource columna_impar_filas}"></Label>
+                    <Label Grid.Row="19" Grid.Column="2"  Text="{Binding _VITA_RAE.unit}" Style="{StaticResource columnna_par_filas}"></Label>
+
+                    <Label Grid.Row="20" Grid.Column="0"  Text="Niacina" Style="{StaticResource columnna_par_filas}"></Label>
+                    <Label Grid.Row="20" Grid.Column="1"  Text="{Binding _NIA.quantity}" Style="{StaticResource columna_impar_filas}"></Label>
+                    <Label Grid.Row="20" Grid.Column="2"  Text="{Binding _NIA.unit}" Style="{StaticResource columnna_par_filas}"></Label>
+
+                    <Label Grid.Row="21" Grid.Column="0"  Text="Vitamina e" Style="{StaticResource columnna_par_filas}"></Label>
+                    <Label Grid.Row="21" Grid.Column="1"  Text="{Binding _TOCPHA.quantity}" Style="{StaticResource columna_impar_filas}"></Label>
+                    <Label Grid.Row="21" Grid.Column="2"  Text="{Binding _TOCPHA.unit}" Style="{StaticResource columnna_par_filas}"></Label>
+                </Grid>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
