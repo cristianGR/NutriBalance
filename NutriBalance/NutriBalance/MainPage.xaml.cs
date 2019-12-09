@@ -1,13 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xamarin.Forms;
 using NutriBalance.ViewModel;
 using NutriBalance.View;
+using NutriBalance.Model;
 using NutriBalance.EdanamApi;
+using System.Collections.ObjectModel;
 
 namespace NutriBalance
 {
@@ -17,12 +16,14 @@ namespace NutriBalance
     public partial class MainPage : ContentPage
     {
         RestService _restService;
-        
+        MainPageViewModel model;
+
         public MainPage()
         {
             InitializeComponent();
             _restService = new RestService();
-            BindingContext = new MainPageViewModel();
+            model = new MainPageViewModel();
+            listView.ItemsSource = model.Items.FoodItems; 
             Title = "ALIMENTOS";
         }
 
@@ -56,6 +57,41 @@ namespace NutriBalance
 
             }) ;
 
+        }
+
+        private void btn_frutas_Clicked(object sender, EventArgs e)
+        {
+            listView.ItemsSource = model.Items.FoodItems.Where(i => i.Subcategory == FoodSubcategory.Frutas);          
+        }
+
+        private void btn_verduras_Clicked(object sender, EventArgs e)
+        {
+            listView.ItemsSource = model.Items.FoodItems.Where(i => i.Subcategory == FoodSubcategory.Verduras);
+        }
+
+        private void btn_carnes_Clicked(object sender, EventArgs e)
+        {
+            listView.ItemsSource = model.Items.FoodItems.Where(i => i.Subcategory == FoodSubcategory.Carnes);
+        }
+
+        private void btn_Legumbres_Clicked(object sender, EventArgs e)
+        {
+            listView.ItemsSource = model.Items.FoodItems.Where(i => i.Subcategory == FoodSubcategory.Legumbres);
+        }
+
+        private void btn_Aceites_Clicked(object sender, EventArgs e)
+        {
+            listView.ItemsSource = model.Items.FoodItems.Where(i => i.Subcategory == FoodSubcategory.Aceites);
+        }
+
+        private void btn_frutos_secos_Clicked(object sender, EventArgs e)
+        {
+            listView.ItemsSource = model.Items.FoodItems.Where(i => i.Subcategory == FoodSubcategory.Frutos_secos);
+        }
+
+        private void btn_todos_Clicked(object sender, EventArgs e)
+        {
+            listView.ItemsSource = model.Items.FoodItems;
         }
     }
 }

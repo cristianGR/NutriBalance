@@ -32,6 +32,10 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AndroidLinkMode>None</AndroidLinkMode>
+    <AotAssemblies>false</AotAssemblies>
+    <EnableLLVM>false</EnableLLVM>
+    <AndroidEnableProfiledAot>false</AndroidEnableProfiledAot>
+    <BundleAssemblies>false</BundleAssemblies>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -91,29 +95,27 @@
       <Name>NutriBalance</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Resources\drawable\verduras\" />
+    <AndroidResource Include="Resources\drawable\aceituna.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\aceites\aceituna.png" />
+    <AndroidResource Include="Resources\drawable\bife.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\carnes\bife.png" />
+    <AndroidResource Include="Resources\drawable\cerdo.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\carnes\cerdo.png" />
+    <AndroidResource Include="Resources\drawable\huevo.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\carnes\huevo.png" />
+    <AndroidResource Include="Resources\drawable\pavo.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\carnes\pavo.png" />
+    <AndroidResource Include="Resources\drawable\pescado.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\carnes\pescado.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\carnes\pollo.png" />
+    <AndroidResource Include="Resources\drawable\pollo.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\aguacate.png" />
@@ -185,25 +187,25 @@
     <AndroidResource Include="Resources\drawable\sandia.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\frutos secos\almendra.png" />
+    <AndroidResource Include="Resources\drawable\almendra.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\frutos secos\castania_de_caju.png" />
+    <AndroidResource Include="Resources\drawable\castania_de_caju.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\frutos secos\mani.png" />
+    <AndroidResource Include="Resources\drawable\mani.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\frutos secos\nuez.png" />
+    <AndroidResource Include="Resources\drawable\nuez.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\frutos secos\pistacho.png" />
+    <AndroidResource Include="Resources\drawable\pistacho.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\legumbres\frijoles.png" />
+    <AndroidResource Include="Resources\drawable\frijoles.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\legumbres\soja.png" />
+    <AndroidResource Include="Resources\drawable\soja.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\ajo.png" />
